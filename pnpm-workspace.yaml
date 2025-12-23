@@ -2,4 +2,4 @@ onlyBuiltDependencies:
   - '@swc/core'
 minimumReleaseAge: 1440
 minimumReleaseAgeExclude:
-  - solana-wallet-router-api
+  - '@paxeer-network/solana-wallet-router-api'
