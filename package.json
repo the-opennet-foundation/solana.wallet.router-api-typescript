@@ -1,6 +1,6 @@
 {
   "name": "@paxeer-network/solana-wallet-router-api",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "The official TypeScript library for the Solana Wallet Router API API",
   "author": "Solana Wallet Router API <>",
   "types": "dist/index.d.ts",
