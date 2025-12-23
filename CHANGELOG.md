@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.0.5 (2025-12-23)
+
+Full Changelog: [v0.0.4...v0.0.5](https://github.com/the-opennet-foundation/solana.wallet.router-api-typescript/compare/v0.0.4...v0.0.5)
+
+### Chores
+
+* update SDK settings ([6c68d95](https://github.com/the-opennet-foundation/solana.wallet.router-api-typescript/commit/6c68d9587765cee350d2cfee159965fc6030f0b5))
+
 ## 0.0.4 (2025-12-23)
 
 Full Changelog: [v0.0.3...v0.0.4](https://github.com/the-opennet-foundation/solana.wallet.router-api-typescript/compare/v0.0.3...v0.0.4)

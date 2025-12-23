@@ -8,8 +8,8 @@
     "moduleResolution": "node",
     "esModuleInterop": true,
     "paths": {
-      "solana-wallet-router-api/*": ["./src/*"],
-      "solana-wallet-router-api": ["./src/index.ts"]
+      "@paxeer-network/solana-wallet-router-api/*": ["./src/*"],
+      "@paxeer-network/solana-wallet-router-api": ["./src/index.ts"]
     },
     "noEmit": true,
 

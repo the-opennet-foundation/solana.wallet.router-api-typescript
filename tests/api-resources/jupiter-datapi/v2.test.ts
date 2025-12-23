@@ -1,6 +1,6 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import SolanaWalletRouterAPI from 'solana-wallet-router-api';
+import SolanaWalletRouterAPI from '@paxeer-network/solana-wallet-router-api';
 
 const client = new SolanaWalletRouterAPI({
   apiKey: 'My API Key',
