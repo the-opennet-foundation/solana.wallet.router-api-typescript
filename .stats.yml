@@ -1,4 +1,4 @@
 configured_endpoints: 24
 openapi_spec_url: https://storage.googleapis.com/stainless-sdk-openapi-specs/chainflow%2Fsolana.wallet.router-api-97e10e11741d0d1ec74583611d0ab8193c6ee8b82400e91e834de5823d64d973.yml
 openapi_spec_hash: b66bda92ef55411a5884be65ff3f1f8b
-config_hash: fd815830bc9290f4775e098de65477d7
+config_hash: 07b18dec59e499f09ac14ae6e8a4549a
