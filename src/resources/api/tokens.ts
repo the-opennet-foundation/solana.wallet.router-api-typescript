@@ -265,11 +265,11 @@ export namespace Pool {
   }
 }
 
-export interface TokenListResponse {
+export interface TokenListResponseBase {
   pools?: Array<Pool>;
 }
 
-export type TokenListResponse = TokenListResponse | TokenListResponse.AllCategoriesTokenListResponse;
+export type TokenListResponse = TokenListResponseBase | TokenListResponse.AllCategoriesTokenListResponse;
 
 export namespace TokenListResponse {
   export interface AllCategoriesTokenListResponse {
