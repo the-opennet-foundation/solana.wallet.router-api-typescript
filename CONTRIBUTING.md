@@ -55,12 +55,12 @@ $ cd solana.wallet.router-api-typescript
 # With yarn
 $ yarn link
 $ cd ../my-package
-$ yarn link solana.wallet.router-api
+$ yarn link solana-wallet-router-api
 
 # With pnpm
 $ pnpm link --global
 $ cd ../my-package
-$ pnpm link -—global solana.wallet.router-api
+$ pnpm link -—global solana-wallet-router-api
 ```
 
 ## Running tests
