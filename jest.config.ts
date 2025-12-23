@@ -7,8 +7,8 @@ const config: JestConfigWithTsJest = {
     '^.+\\.(t|j)sx?$': ['@swc/jest', { sourceMaps: 'inline' }],
   },
   moduleNameMapper: {
-    '^solana-wallet-router-api$': '<rootDir>/src/index.ts',
-    '^solana-wallet-router-api/(.*)$': '<rootDir>/src/$1',
+    '^@paxeer-network/solana-wallet-router-api$': '<rootDir>/src/index.ts',
+    '^@paxeer-network/solana-wallet-router-api/(.*)$': '<rootDir>/src/$1',
   },
   modulePathIgnorePatterns: [
     '<rootDir>/ecosystem-tests/',

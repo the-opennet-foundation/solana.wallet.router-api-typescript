@@ -1,5 +1,8 @@
-import { multipartFormRequestOptions, createForm } from 'solana-wallet-router-api/internal/uploads';
-import { toFile } from 'solana-wallet-router-api/core/uploads';
+import {
+  multipartFormRequestOptions,
+  createForm,
+} from '@paxeer-network/solana-wallet-router-api/internal/uploads';
+import { toFile } from '@paxeer-network/solana-wallet-router-api/core/uploads';
 
 describe('form data validation', () => {
   test('valid values do not error', async () => {
