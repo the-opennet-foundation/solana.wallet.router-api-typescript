@@ -82,7 +82,12 @@ describe('resource phantom', () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
       client.api.phantom.getPerpTrendingMarkets(
-        { chainId: 'chainId', limit: 'limit', sortBy: 'volume', sortDirection: 'asc' },
+        {
+          chainId: 'chainId',
+          limit: 'limit',
+          sortBy: 'volume',
+          sortDirection: 'asc',
+        },
         { path: '/_stainless_unknown_path' },
       ),
     ).rejects.toThrow(SolanaWalletRouterAPI.NotFoundError);

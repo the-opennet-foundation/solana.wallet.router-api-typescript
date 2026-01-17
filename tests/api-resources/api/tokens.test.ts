@@ -37,7 +37,11 @@ describe('resource tokens', () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
       client.api.tokens.list(
-        { category: 'trending', interval: '5m', limit: 1 },
+        {
+          category: 'trending',
+          interval: '5m',
+          limit: 1,
+        },
         { path: '/_stainless_unknown_path' },
       ),
     ).rejects.toThrow(SolanaWalletRouterAPI.NotFoundError);
