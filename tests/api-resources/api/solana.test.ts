@@ -8,7 +8,7 @@ const client = new SolanaWalletRouterAPI({
 });
 
 describe('resource solana', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getStatus', async () => {
     const responsePromise = client.api.solana.getStatus();
     const rawResponse = await responsePromise.asResponse();

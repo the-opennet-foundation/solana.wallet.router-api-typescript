@@ -8,7 +8,7 @@ const client = new SolanaWalletRouterAPI({
 });
 
 describe('resource v2', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('listRecent', async () => {
     const responsePromise = client.jupiter.tokens.v2.listRecent();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource v2', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('listRecent: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -28,7 +28,7 @@ describe('resource v2', () => {
     ).rejects.toThrow(SolanaWalletRouterAPI.NotFoundError);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('listTopTraded', async () => {
     const responsePromise = client.jupiter.tokens.v2.listTopTraded('5m');
     const rawResponse = await responsePromise.asResponse();
@@ -40,7 +40,7 @@ describe('resource v2', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('listTopTraded: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -48,7 +48,7 @@ describe('resource v2', () => {
     ).rejects.toThrow(SolanaWalletRouterAPI.NotFoundError);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('listTopTrending', async () => {
     const responsePromise = client.jupiter.tokens.v2.listTopTrending('5m');
     const rawResponse = await responsePromise.asResponse();
@@ -60,7 +60,7 @@ describe('resource v2', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('listTopTrending: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
