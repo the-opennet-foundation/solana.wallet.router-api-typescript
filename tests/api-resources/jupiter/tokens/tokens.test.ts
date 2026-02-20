@@ -8,7 +8,7 @@ const client = new SolanaWalletRouterAPI({
 });
 
 describe('resource tokens', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.jupiter.tokens.retrieve('mint');
     const rawResponse = await responsePromise.asResponse();

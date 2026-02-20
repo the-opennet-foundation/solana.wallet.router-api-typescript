@@ -8,7 +8,7 @@ const client = new SolanaWalletRouterAPI({
 });
 
 describe('resource phantom', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('exploreMemeTokens', async () => {
     const responsePromise = client.api.phantom.exploreMemeTokens();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource phantom', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('exploreMemeTokens: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -65,7 +65,7 @@ describe('resource phantom', () => {
     ).rejects.toThrow(SolanaWalletRouterAPI.NotFoundError);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getPerpTrendingMarkets', async () => {
     const responsePromise = client.api.phantom.getPerpTrendingMarkets();
     const rawResponse = await responsePromise.asResponse();
@@ -77,7 +77,7 @@ describe('resource phantom', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getPerpTrendingMarkets: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -93,7 +93,7 @@ describe('resource phantom', () => {
     ).rejects.toThrow(SolanaWalletRouterAPI.NotFoundError);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getSimpleTokenOverviews: only required params', async () => {
     const responsePromise = client.api.phantom.getSimpleTokenOverviews({ tokenAddresses: 'tokenAddresses' });
     const rawResponse = await responsePromise.asResponse();
@@ -105,12 +105,12 @@ describe('resource phantom', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getSimpleTokenOverviews: required and optional params', async () => {
     const response = await client.api.phantom.getSimpleTokenOverviews({ tokenAddresses: 'tokenAddresses' });
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getSingleTokenStats: only required params', async () => {
     const responsePromise = client.api.phantom.getSingleTokenStats({ tokenAddress: 'tokenAddress' });
     const rawResponse = await responsePromise.asResponse();
@@ -122,12 +122,12 @@ describe('resource phantom', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getSingleTokenStats: required and optional params', async () => {
     const response = await client.api.phantom.getSingleTokenStats({ tokenAddress: 'tokenAddress' });
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('searchSplTokens', async () => {
     const responsePromise = client.api.phantom.searchSplTokens();
     const rawResponse = await responsePromise.asResponse();
@@ -139,7 +139,7 @@ describe('resource phantom', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('searchSplTokens: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(

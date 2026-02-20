@@ -8,7 +8,7 @@ const client = new SolanaWalletRouterAPI({
 });
 
 describe('resource assets', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getDescription', async () => {
     const responsePromise = client.jupiterDatapi.v1.assets.getDescription('assetId');
     const rawResponse = await responsePromise.asResponse();

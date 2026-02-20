@@ -8,7 +8,7 @@ const client = new SolanaWalletRouterAPI({
 });
 
 describe('resource trenchStream', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('connect', async () => {
     const responsePromise = client.trenchStream.connect();
     const rawResponse = await responsePromise.asResponse();

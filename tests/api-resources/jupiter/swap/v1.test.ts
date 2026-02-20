@@ -8,7 +8,7 @@ const client = new SolanaWalletRouterAPI({
 });
 
 describe('resource v1', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('executeSwap: only required params', async () => {
     const responsePromise = client.jupiter.swap.v1.executeSwap({
       quoteResponse: {
@@ -28,7 +28,7 @@ describe('resource v1', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('executeSwap: required and optional params', async () => {
     const response = await client.jupiter.swap.v1.executeSwap({
       quoteResponse: {
@@ -63,7 +63,7 @@ describe('resource v1', () => {
     });
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getQuote: only required params', async () => {
     const responsePromise = client.jupiter.swap.v1.getQuote({
       amount: 0,
@@ -79,7 +79,7 @@ describe('resource v1', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getQuote: required and optional params', async () => {
     const response = await client.jupiter.swap.v1.getQuote({
       amount: 0,

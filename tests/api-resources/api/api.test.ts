@@ -8,7 +8,7 @@ const client = new SolanaWalletRouterAPI({
 });
 
 describe('resource api', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getWalletInfo', async () => {
     const responsePromise = client.api.getWalletInfo('7xKXtg2CW87d97TXJSDpbD5jBkheTqA83TZRuJosgAsU');
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource api', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('sendTransaction: only required params', async () => {
     const responsePromise = client.api.sendTransaction({ signedTransaction: 'signedTransaction' });
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource api', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('sendTransaction: required and optional params', async () => {
     const response = await client.api.sendTransaction({
       signedTransaction: 'signedTransaction',
@@ -40,7 +40,7 @@ describe('resource api', () => {
     });
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('uploadTokenMetadata: only required params', async () => {
     const responsePromise = client.api.uploadTokenMetadata({
       mint: 'mint',
@@ -58,7 +58,7 @@ describe('resource api', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('uploadTokenMetadata: required and optional params', async () => {
     const response = await client.api.uploadTokenMetadata({
       mint: 'mint',
