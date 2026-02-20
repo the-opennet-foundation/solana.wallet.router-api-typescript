@@ -41,7 +41,8 @@ const client = new SolanaWalletRouterAPI({
   apiKey: process.env['SOLANA_WALLET_ROUTER_API_API_KEY'], // This is the default and can be omitted
 });
 
-const tokenListResponse: SolanaWalletRouterAPI.API.TokenListResponse = await client.api.tokens.list();
+const tokenListResponse: SolanaWalletRouterAPI.API.TokenListResponse =
+  await client.api.tokens.list();
 ```
 
 Documentation for each method, request param, and response field are available in docstrings and will appear on hover in most modern editors.

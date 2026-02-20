@@ -8,7 +8,7 @@ const client = new SolanaWalletRouterAPI({
 });
 
 describe('resource tokens', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.api.tokens.retrieve('So11111111111111111111111111111111111111112');
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource tokens', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('list', async () => {
     const responsePromise = client.api.tokens.list();
     const rawResponse = await responsePromise.asResponse();
@@ -32,12 +32,16 @@ describe('resource tokens', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('list: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
       client.api.tokens.list(
-        { category: 'trending', interval: '5m', limit: 1 },
+        {
+          category: 'trending',
+          interval: '5m',
+          limit: 1,
+        },
         { path: '/_stainless_unknown_path' },
       ),
     ).rejects.toThrow(SolanaWalletRouterAPI.NotFoundError);

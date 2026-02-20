@@ -8,7 +8,7 @@ const client = new SolanaWalletRouterAPI({
 });
 
 describe('resource v2', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getTokenPriceChart: only required params', async () => {
     const responsePromise = client.jupiterDatapi.v2.getTokenPriceChart('assetId', {
       baseAsset: 'baseAsset',
@@ -26,7 +26,7 @@ describe('resource v2', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getTokenPriceChart: required and optional params', async () => {
     const response = await client.jupiterDatapi.v2.getTokenPriceChart('assetId', {
       baseAsset: 'baseAsset',

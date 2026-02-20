@@ -8,7 +8,7 @@ const client = new SolanaWalletRouterAPI({
 });
 
 describe('resource v1', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getPools: only required params', async () => {
     const responsePromise = client.jupiterDatapi.v1.getPools({ assetIds: 'assetIds' });
     const rawResponse = await responsePromise.asResponse();
@@ -20,12 +20,12 @@ describe('resource v1', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getPools: required and optional params', async () => {
     const response = await client.jupiterDatapi.v1.getPools({ assetIds: 'assetIds' });
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getTokenHolders', async () => {
     const responsePromise = client.jupiterDatapi.v1.getTokenHolders('assetId');
     const rawResponse = await responsePromise.asResponse();
@@ -37,7 +37,7 @@ describe('resource v1', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getTokenTransactions', async () => {
     const responsePromise = client.jupiterDatapi.v1.getTokenTransactions('assetId');
     const rawResponse = await responsePromise.asResponse();
@@ -49,7 +49,7 @@ describe('resource v1', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getTokenTransactions: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -68,7 +68,7 @@ describe('resource v1', () => {
     ).rejects.toThrow(SolanaWalletRouterAPI.NotFoundError);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getWalletPnlStats: only required params', async () => {
     const responsePromise = client.jupiterDatapi.v1.getWalletPnlStats({ address: 'address' });
     const rawResponse = await responsePromise.asResponse();
@@ -80,7 +80,7 @@ describe('resource v1', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getWalletPnlStats: required and optional params', async () => {
     const response = await client.jupiterDatapi.v1.getWalletPnlStats({ address: 'address' });
   });
